@@ -1,0 +1,347 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    color: #323842;
+    margin: 0px;
+    padding: 0px;
+}
+
+.info {
+    text-align: center;
+}
+
+h1,
+.info h2,
+form legend h2,
+.info p {
+    margin-top: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+    background-color: #323842;
+    padding: 40px 0px;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: rgb(72, 83, 94);
+}
+
+.info h2 {
+    color: white;
+}
+
+.info h2,
+form legend h2 {
+    font-size: 1.9em;
+    padding: 10px 0px 0px 0px;
+}
+
+.info p {
+    text-align: center;
+    font-size: 1.5em;
+    color: #dbdfe5;
+    padding: 0px;
+    margin: 0px 25px 40px 25px;
+}
+
+.divider,
+.divider2 {
+    margin: 0px 20px 40px 20px;
+    border-bottom: 4px solid #323842;
+}
+
+.divider {
+    border-top: 8px solid #323842;
+    padding: 3px;
+}
+
+.divider2 {
+    padding: 2px;
+}
+
+#main-info {
+    border: none;
+
+}
+
+#main-info label {
+    background-color: #ffffff;
+    font-size: 1.4em;
+}
+
+#main-info input,
+#main-info select {
+    display: block;
+    text-align: left;
+    height: 60px;
+    color: black;
+    font-size: 1em;
+    padding: 5px 20px;
+    margin: 5px 2px 30px 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(228, 227, 227);
+
+}
+
+#main-info input:focus::placeholder,
+#main-info select:focus::placeholder,
+#prefs textarea:focus::placeholder {
+    font-size: 0.8em;
+}
+
+#main-info input:focus,
+#main-info select:focus,
+#prefs textarea:focus {
+    box-shadow: 0 5px 10px rgba(128, 128, 128, 0.07), 0 15px 20px rgba(50, 50, 50, .2);
+    background-color: white;
+}
+
+input[type="zip"] {
+
+    width: 50%;
+
+}
+
+#main-info input:not([name="zip"]),
+#main-info select {
+
+    width: 100%;
+
+
+}
+
+
+
+
+
+input[name="email"]::placeholder,
+input[name="name"]::placeholder,
+input[name="zip"]::placeholder,
+input[name="address"]::placeholder,
+input[name="phone"]::placeholder,
+input[name="city"]::placeholder,
+textarea[name="comments"]::placeholder {
+    text-align: right;
+    font-style: italic;
+    color: darkgray;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+#prefs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.2em;
+    border: none;
+}
+
+#prefs input[type='checkbox'],
+#prefs input[type='radio'],
+.checkbox-container input[type='checkbox'],
+.radio-container input[type='radio'] {
+    flex-shrink: 0;
+}
+
+#prefs label,
+.checkbox-container label,
+.radio-container label {
+    margin-left: 8px;
+    display: block;
+}
+
+.checkbox-container,
+.radio-container {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#prefs textarea {
+    display: block;
+    text-align: left;
+    width: 100%;
+    height: 100px;
+    color: black;
+    font-size: 1em;
+    padding: 5px 20px;
+    margin: 5px 2px 30px 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(228, 227, 227);
+}
+
+#prefs label[for="comments"] {
+    margin-top: 20px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    font-size: 1.5em;
+    padding: 5px 20px;
+    margin: 5px 2px 30px 2px;
+    border-radius: 5px;
+    border: none;
+    background-color: #009e9e;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-size: 1em;
+    color: #dbdfe5;
+    margin-top: 10px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+
+    h1 {
+        font-size: 1.1em;
+        padding: 20px 0px;
+
+    }
+
+    .info h2 {
+        font-size: 1.1em;
+        margin-top: 50px;
+    }
+
+    .info p {
+        font-size: 1em;
+
+    }
+
+    .divider,
+    .divider2 {
+        width: 60%;
+        margin: auto;
+        border-top: 4px solid #323842;
+    }
+
+    .divider {
+        border-bottom: 1px solid #323842;
+    }
+
+    #main-info {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        font-size: 1em;
+        border: none;
+        margin: auto;
+    }
+
+    #main-info legend h2,
+    #prefs legend h2 {
+        font-size: 1.3em;
+
+    }
+
+    #main-info legend,
+    #prefs legend {
+        font-size: 1em;
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+    input[name="email"]::placeholder,
+    input[name="name"]::placeholder {
+        text-align: right;
+        font-style: italic;
+        color: darkgray;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .input-container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        font-size: 0.8em;
+        border: none;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+    .input-container label {
+        width: 40%;
+        font-size: 0.9em;
+    }
+
+    #main-info input,
+    #main-info select {
+        height: 50px;
+        margin: auto;
+        padding: 0px;
+
+    }
+
+    #prefs {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        font-size: 1.1em;
+        border: none;
+        margin: auto;
+        font-size: 1em;
+        padding: 0px;
+        justify-content: flex-start;
+    }
+
+    #prefs p {
+        text-align: left;
+    }
+
+    .checkbox-container,
+    .radio-container {
+        font-size: 1em;
+        text-align: left;
+        justify-content: flex-start;
+        padding: 0px;
+        margin: 10px;
+    }
+
+    #main-info input[name="zip"] {
+        display: block;
+        /* Ensure block-level display */
+        width: 25%;
+        /* Adjust width as needed */
+        margin-left: 0;
+        /* Align to the left */
+        margin-right: auto;
+        /* Keeps the right margin auto */
+        /* Other necessary styles */
+    }
+
+    label[for="zip"] {
+        width: 28.5%;
+        /* Other styles */
+    }
+
+}
+
+#main-info input,
+#prefs textarea {
+    padding-left: 10px;
+}
